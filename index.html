@@ -1,0 +1,45 @@
+<button onclick="main()">home page</button><button onclick="about()">About the Artist</button><button onclick="contact()">contact page</button><button onclick="portfolio()">portfolio page</button>
+<script>
+    if (localStorage.getItem("furby") == undefined) {
+        localStorage.setItem("furby", "0")
+    }
+    if (localStorage.getItem("furby") == "0") {
+        document.write("<h1>Home page here</h1>")
+        document.write("<h1><img src=","https://th.bing.com/th/id/R.ac7aa0b0c2450194a9557ee09b818374?rik=3ZxjHbbz9nTw1A&riu=http%3a%2f%2f4.bp.blogspot.com%2f-3u9hdCdNpmI%2fUFZUDyUjvWI%2fAAAAAAAAAoE%2fLvT8oA7KH0Y%2fs1600%2fallow_me_to_introduce_myself.jpg&ehk=8K%2fD3oWsPVi9IChJwjASkSCJaKO7KyTElFJBCkXWzzQ%3d&risl=&pid=ImgRaw&r=0","></h1>")
+        document.write("<h1>my name is Braden Bigham and this is my online portfolio!!!</h1>")
+    }
+    if (localStorage.getItem("furby") == "1") {
+       document.write("<h1>This is the about me(artist) page</h1>")
+       document.write("<h1><img src=","https://raw.githubusercontent.com/furbyboom/images/main/download.jpeg","></h1>")
+       document.write("<h1>Hello my name is Braden and I like to surf sometimes and this is my favorite class!</h1><h1>what I also like doing is programming sometimes(like this website)</h1>")
+    }
+    if (localStorage.getItem("furby") == "2") {
+        document.write("<h1>welcome to my contact page!!!</h1>")
+        document.write("<h1><img src=", "https://th.bing.com/th/id/OIP.9RN-AnGeevk3u7BGDSaAeQHaFy?w=208&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" ,"></h1>")
+        document.write("<h1>contact me @: bbigham@olivegrovecharter.org at gmail/email</h1>")
+
+    }
+    if (localStorage.getItem("furby") == "3") {
+        document.write("<h1>portfolio page</h1>")
+        document.write("<h1><img src=","https://th.bing.com/th/id/OIP.JoKbmOpnuLKR4N5BRFBy1wHaEV?w=271&h=180&c=7&r=0&o=5&dpr=2&pid=1.7","></h1>")
+        document.write("<img src=","https://www.proactivedevelopers.com/blog/wp-content/uploads/2015/04/webdesigner-1024x1024.jpg"," width=","200"," height=","200",">")
+        document.write("<h1>You need to know how people navigate a website and How to program to make website, so that you can get a high paying job as a programmer of a website.</h1>")
+    }
+    function main(){
+        localStorage.setItem("furby", "0")
+        location.reload()
+    }
+    function about(){
+        localStorage.setItem("furby", "1")
+        location.reload()
+    }
+    function contact(){
+        localStorage.setItem("furby", "2")
+        location.reload()
+    }
+    function portfolio(){
+        localStorage.setItem("furby", "3")
+        location.reload()
+    }
+</script>
+<h1></h1>
